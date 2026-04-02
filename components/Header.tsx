@@ -28,9 +28,9 @@ export function Header() {
             <Image
               src={SITE_IMAGES.logo}
               alt={COMPANY.name}
-              width={140}
-              height={48}
-              className="h-10 w-auto max-w-[140px] object-contain object-left md:h-12"
+              width={280}
+              height={96}
+              className="h-20 w-auto max-w-[280px] object-contain object-left md:h-28"
               onError={() => setLogoOk(false)}
             />
           ) : (

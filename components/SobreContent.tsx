@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { CTAButton } from "@/components/CTAButton";
+import { NossaEstruturaMedia } from "@/components/NossaEstruturaMedia";
 import { SitePhoto } from "@/components/SitePhoto";
 import { COMPANY } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
@@ -138,15 +139,9 @@ export function SobreContent() {
               initial={{ opacity: 0, x: 12 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="order-1 max-h-[400px] lg:order-2 lg:max-h-[420px]"
+              className="order-1 w-full lg:order-2"
             >
-              <SitePhoto
-                src={SITE_IMAGES.sobreEstrutura}
-                alt={`${COMPANY.name} — estrutura e galpão`}
-                className="aspect-square max-h-[400px] rounded-2xl bg-gray-200 lg:max-h-[420px]"
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                fallback={<div className="h-full min-h-[280px] bg-gray-200" />}
-              />
+              <NossaEstruturaMedia />
             </motion.div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageBanner } from "@/components/PageBanner";
 import { ContactForm } from "@/components/ContactForm";
-import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, ShoppingBag } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -52,17 +52,28 @@ export default function ContatoPage() {
               </li>
             </ul>
             <div className="mt-8">
-              <p className="text-sm font-semibold text-text">Instagram</p>
-              <a
-                href={COMPANY.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-2 rounded-lg border border-surface-border px-4 py-3 text-primary transition-all duration-200 hover:bg-surface-bg"
-                aria-label="Instagram Anma Distribuidora"
-              >
-                <Instagram className="h-5 w-5" />
-                @anma.distribuidora
-              </a>
+              <p className="text-sm font-semibold text-text">Redes</p>
+              <div className="flex gap-3">
+                <a
+                  href={COMPANY.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-2 rounded-lg border border-surface-border px-4 py-3 text-primary transition-all duration-200 hover:bg-surface-bg"
+                >
+                  <Instagram className="h-5 w-5" />
+                  @anma.distribuidora
+                </a>
+
+                <a
+                  href="https://shopee.com.br/anmadistribuidora"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-2 rounded-lg border border-surface-border px-4 py-3 text-primary transition-all duration-200 hover:bg-surface-bg"
+                >
+                  <ShoppingBag className="h-5 w-5" />
+                  Shoppe
+                </a>
+              </div>
             </div>
           </div>
         </div>

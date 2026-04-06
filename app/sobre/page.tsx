@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SobrePage() {
   return (
     <>
-      <PageBanner title="Sobre" />
+      <PageBanner title="Quem Somos" />
       <SobreContent />
     </>
   );

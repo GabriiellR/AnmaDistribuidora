@@ -25,7 +25,7 @@ export function WhyChooseSection() {
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="text-2xl font-extrabold md:text-3xl lg:text-4xl">
-            Por que escolher a {COMPANY.name}?
+            Por que escolher a nossa empresa?
           </h2>
           <ul className="mt-10 space-y-4 text-left">
             {benefits.map((b, i) => (

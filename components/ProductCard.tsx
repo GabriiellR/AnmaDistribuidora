@@ -38,7 +38,7 @@ export function ProductCard({
         className
       )}
     >
-      <div className="flex aspect-square items-center justify-center bg-gray-200">
+      <div className="flex aspect-video items-center justify-center bg-gray-200">
         <Package className="h-16 w-16 text-gray-400" aria-hidden />
       </div>
       <div className="flex flex-1 flex-col p-4">

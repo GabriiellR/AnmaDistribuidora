@@ -10,7 +10,7 @@ import { SITE_IMAGES } from "@/lib/site-images";
 
 const navLinks = [
   { href: "/", label: "Início" },
-  { href: "/sobre", label: "Sobre" },
+  { href: "/sobre", label: "Quem Somos" },
   { href: "/produtos", label: "Produtos" },
   { href: "/contato", label: "Contato" },
 ];

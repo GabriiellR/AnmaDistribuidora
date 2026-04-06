@@ -31,7 +31,8 @@ export function NossaEstruturaMedia() {
     return (
       <video
         className="aspect-video w-full max-h-[420px] rounded-2xl bg-black object-cover shadow-md ring-1 ring-surface-border"
-        controls
+        autoPlay
+        muted
         playsInline
         preload="metadata"
         poster={poster?.trim() ? poster : undefined}

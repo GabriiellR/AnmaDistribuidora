@@ -9,7 +9,7 @@ import { SITE_IMAGES } from "@/lib/site-images";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[#15803d] text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[#293b29] text-white">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-6 md:py-20 lg:gap-16 lg:px-8 lg:py-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

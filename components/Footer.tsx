@@ -23,14 +23,26 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wide text-accent">
-              Contato
+              Telefone e WhatsApp
             </h3>
             <p className="mt-3 text-sm text-white/90">
+              <span className="text-white/60">Fixo: </span>
               <a
                 href={`tel:${COMPANY.phoneTel}`}
                 className="transition-all duration-200 hover:text-accent"
               >
                 {COMPANY.phone}
+              </a>
+            </p>
+            <p className="mt-2 text-sm text-white/90">
+              <span className="text-white/60">WhatsApp: </span>
+              <a
+                href={COMPANY.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-200 hover:text-accent"
+              >
+                {COMPANY.whatsappDisplay}
               </a>
             </p>
             <p className="mt-2 text-sm">

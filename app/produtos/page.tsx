@@ -7,7 +7,7 @@ import { COMPANY, whatsappGenericMessage } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Produtos",
-  description: `Catálogo ${COMPANY.name}: filme stretch, núcleos e tubos, plástico bolha, fitas e acessórios. Orçamento pelo WhatsApp.`,
+  description: `Catálogo ${COMPANY.name}: filme stretch, fitas adesivas Koretech, fitas PP/PET para arquear, plástico bolha, sacolas e acessórios. Orçamento pelo WhatsApp.`,
 };
 
 const orcamentoLink = whatsappGenericMessage(

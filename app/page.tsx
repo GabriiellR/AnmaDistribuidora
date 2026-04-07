@@ -4,6 +4,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductsSection } from "@/components/ProductsSection";
 import { WhyChooseSection } from "@/components/WhyChooseSection";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { ContactStrip } from "@/components/ContactStrip";
 import { COMPANY } from "@/lib/constants";
 
@@ -20,6 +21,7 @@ export default function HomePage() {
       <AboutSection />
       <ProductsSection />
       <WhyChooseSection />
+      <TestimonialsCarousel />
       <ContactStrip />
     </>
   );

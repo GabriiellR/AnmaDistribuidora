@@ -8,7 +8,7 @@ export function ProductCardSkeleton({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="aspect-square bg-gray-200" />
+      <div className="aspect-video bg-gray-200" />
       <div className="space-y-3 p-4">
         <div className="h-5 w-24 rounded-full bg-gray-200" />
         <div className="h-4 w-full rounded bg-gray-200" />

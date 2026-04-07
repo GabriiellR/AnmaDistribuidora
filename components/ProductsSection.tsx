@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   PRODUCT_CATEGORIES,
   PRODUCTS,
+  productImageSrc,
   whatsappProductLink,
   type ProductCategoryId,
 } from "@/lib/constants";
@@ -98,6 +99,7 @@ export function ProductsSection() {
                         name={p.name}
                         categoryId={p.category}
                         categoryLabel={categoryLabel(p.category)}
+                        imageSrc={productImageSrc(p)}
                         href={whatsappProductLink(p.name)}
                       />
                     </motion.div>

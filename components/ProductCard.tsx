@@ -53,7 +53,7 @@ export function ProductCard({
             src={imageSrc}
             alt={name}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             onError={() => setImgOk(false)}
           />

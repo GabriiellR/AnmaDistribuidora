@@ -87,24 +87,27 @@ export function productImageSrc(product: { id: string; image?: string }) {
 }
 
 export type ProductCategoryId =
-  | "filme-stretch"
-  | "fitas-adesivas"
-  | "fitas-arquear"
-  | "plastico-protecao"
-  | "sacolas"
-  | "acessorios";
+    | "filme-stretch"
+    | "fitas-adesivas"
+    | "fitas-arquear"
+    | "plastico-protecao"
+    | "bobinas-sacos"       // ← NOVA: bobinas termossoldáveis e sacos
+    | "sacolas"
+    | "acessorios";
 
 export const PRODUCT_CATEGORIES: {
-  id: ProductCategoryId;
-  label: string;
+    id: ProductCategoryId;
+    label: string;
 }[] = [
-  { id: "filme-stretch", label: "Filme stretch" },
-  { id: "fitas-adesivas", label: "Fitas adesivas" },
-  { id: "fitas-arquear", label: "Fitas de arquear" },
-  { id: "plastico-protecao", label: "Plástico e proteção" },
-  { id: "sacolas", label: "Sacolas" },
-  { id: "acessorios", label: "Acessórios" },
-];
+        { id: "filme-stretch", label: "Filme stretch" },
+        { id: "fitas-adesivas", label: "Fitas adesivas" },
+        { id: "fitas-arquear", label: "Fitas de arquear" },
+        { id: "plastico-protecao", label: "Plástico e proteção" },
+        { id: "bobinas-sacos", label: "Bobinas e sacos" },   // ← NOVA
+        { id: "sacolas", label: "Sacolas" },
+        { id: "acessorios", label: "Acessórios" },
+    ];
+
 
 export interface ProductItem {
   id: string;
@@ -119,144 +122,176 @@ export interface ProductItem {
  * (slug = nome do arquivo sem extensão).
  */
 export const PRODUCTS: ProductItem[] = [
-  {
-    id: "filme-stretch-piramide",
-    name: "Filme stretch transparente — bobinas para paletização",
-    category: "filme-stretch",
-    image: "/images/produtos/filme-stretch-piramide.png",
-  },
-  {
-    id: "filme-stretch-duas-bobinas",
-    name: "Filme stretch — duas bobinas (manual / industrial)",
-    category: "filme-stretch",
-    image: "/images/produtos/filme-stretch-duas-bobinas.png",
-  },
-  {
-    id: "filme-stretch-com-tubete",
-    name: "Filme stretch com tubete — núcleo reforçado",
-    category: "filme-stretch",
-    image: "/images/produtos/filme-stretch-com-tubete.png",
-  },
-  {
-    id: "stretch-bobinas-empilhadas-alt",
-    name: "Filme stretch — outras micras, larguras e pré-estirado (consulte)",
-    category: "filme-stretch",
-    image: "/images/produtos/stretch-bobinas-empilhadas-alt.png",
-  },
-  {
-    id: "fita-kraft-reforcada",
-    name: "Fita papel kraft reforçada — fios sintéticos (alta resistência)",
-    category: "fitas-adesivas",
-    image: "/images/produtos/fita-kraft-reforcada.png",
-  },
-  {
-    id: "fita-gomada-kraft",
-    name: "Fita gomada kraft — papel natural para fechamento de caixas",
-    category: "fitas-adesivas",
-    image: "/images/produtos/fita-gomada-kraft.png",
-  },
-  {
-    id: "koretech-transparente-48x100",
-    name: "Koretech — fita adesiva transparente 48 mm × 100 m (empacotamento)",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-transparente-48x100.png",
-  },
-  {
-    id: "koretech-marrom-45x40",
-    name: "Koretech — fita adesiva marrom BOPP 45 mm × 40 m",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-marrom-45x40.png",
-  },
-  {
-    id: "koretech-transparente-45x40",
-    name: "Koretech — fita adesiva transparente 45 mm × 40 m (BOPP)",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-transparente-45x40.png",
-  },
-  {
-    id: "koretech-transparente-18x50-pct10",
-    name: "Koretech — fita transparente 18 mm × 50 m — pacote com 10 rolos",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-transparente-18x50-pct10.png",
-  },
-  {
-    id: "koretech-kraft-48x50",
-    name: "Koretech — fita adesiva kraft 48 mm × 50 m (hot melt)",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-kraft-48x50.png",
-  },
-  {
-    id: "koretech-marrom-pack-alt",
-    name: "Koretech — fita marrom empacotamento (outras medidas sob consulta)",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-marrom-pack-alt.png",
-  },
-  {
-    id: "koretech-transp-pack-alt",
-    name: "Koretech — fita transparente — linha display / revenda",
-    category: "fitas-adesivas",
-    image: "/images/produtos/koretech-transp-pack-alt.png",
-  },
-  {
-    id: "fita-pp-preta-arquear",
-    name: "Fita PP preta para arqueação — texturizada",
-    category: "fitas-arquear",
-    image: "/images/produtos/fita-pp-preta-arquear.png",
-  },
-  {
-    id: "fita-preta-texturizada-alt",
-    name: "Fita de arquear PP preta — alto desempenho",
-    category: "fitas-arquear",
-    image: "/images/produtos/fita-preta-texturizada-alt.png",
-  },
-  {
-    id: "fita-pp-azul-arquear",
-    name: "Fita PP azul para arqueação de cargas",
-    category: "fitas-arquear",
-    image: "/images/produtos/fita-pp-azul-arquear.png",
-  },
-  {
-    id: "fita-pp-branca-arquear",
-    name: "Fita PP branca para arqueação",
-    category: "fitas-arquear",
-    image: "/images/produtos/fita-pp-branca-arquear.png",
-  },
-  {
-    id: "fita-pet-verde-selo-mcpack",
-    name: "Fita PET verde + selo MCPACK — kit arqueação",
-    category: "fitas-arquear",
-    image: "/images/produtos/fita-pet-verde-selo-mcpack.png",
-  },
-  {
-    id: "plastico-bolha-nopc",
-    name: "Plástico bolha — bobinas para proteção de produtos",
-    category: "plastico-protecao",
-    image: "/images/produtos/plastico-bolha-nopc.png",
-  },
-  {
-    id: "manta-protecao",
-    name: "Manta / filme de proteção — diversas aplicações",
-    category: "plastico-protecao",
-    image: "/images/produtos/manta-protecao.png",
-  },
-  {
-    id: "sacolas-plasticas-verdes",
-    name: "Sacolas plásticas verdes tipo camiseta — revenda",
-    category: "sacolas",
-    image: "/images/produtos/sacolas-plasticas-verdes.png",
-  },
-  {
-    id: "fitilho-plastico",
-    name: "Fitilho plástico para amarração e embalagem",
-    category: "acessorios",
-    image: "/images/produtos/fitilho-plastico.png",
-  },
-  {
-    id: "lacres-acessorios",
-    name: "Selos, lacres e complementos para arqueação (consulte)",
-    category: "acessorios",
-    image: "/images/produtos/lacres-acessorios.png",
-  },
+    // ── FILME STRETCH ──────────────────────────────────────────────
+    {
+        id: "filme-pvc-380x9x700",
+        name: "Bob Filme de PVC 380x9x700",
+        category: "filme-stretch",
+        image: "/images/produtos/1173.png",
+    },
+    {
+        id: "bobina-stretch-com-tubete-1107",
+        name: "Bobina Filme Stretch Com Tubete",
+        category: "filme-stretch",
+        image: "/images/produtos/1107.png",
+    },
+    {
+        id: "filme-stretch-com-tubete",
+        name: "Filme Stretch Com Tubete",
+        category: "filme-stretch",
+        image: "/images/produtos/1099.png",
+    },
+    {
+        id: "filme-stretch-sem-tubete",
+        name: "Filme Stretch Sem Tubete",
+        category: "filme-stretch",
+        image: "/images/produtos/1091_1102_1100.png",
+    },
+    {
+        id: "stretchinho-manopla",
+        name: "Rolo Stretchinho Com Manopla 100 Metros",
+        category: "filme-stretch",
+        image: "/images/produtos/1009.png",
+    },
+
+    // ── FITAS ADESIVAS ─────────────────────────────────────────────
+    {
+        id: "fita-crepe",
+        name: "Pct Fita Crepe",
+        category: "fitas-adesivas",
+        image: "/images/produtos/1179_1180.png",
+    },
+    {
+        id: "fita-adesiva-transparente",
+        name: "Und Fita Adesiva Transp.",
+        category: "fitas-adesivas",
+        image: "/images/produtos/1155.png",
+    },
+    {
+        id: "fita-adesiva-cristal",
+        name: "Pct Fita Adesiva Cristal",
+        category: "fitas-adesivas",
+        image: "/images/produtos/1133.png",
+    },
+    {
+        id: "fita-gomada-sem-reforco",
+        name: "Fita Gomada Sem Reforço Nylon",
+        category: "fitas-adesivas",
+        image: "/images/produtos/1121.png",
+    },
+    {
+        id: "fita-gomada-com-reforco",
+        name: "Fita Gomada Com Reforço Nylon",
+        category: "fitas-adesivas",
+        image: "/images/produtos/1122.png",
+    },
+
+    // ── FITAS DE ARQUEAR ───────────────────────────────────────────
+    {
+        id: "fita-pet-16mm-1163",
+        name: "Rolo Fita PET 16MM",
+        category: "fitas-arquear",
+        image: "/images/produtos/1163.png",
+    },
+    {
+        id: "fita-pet-16mm-1116",
+        name: "Rolo Fita PET 16MM (alt.)",
+        category: "fitas-arquear",
+        image: "/images/produtos/1116.png",
+    },
+    {
+        id: "fita-phoenix-azul",
+        name: "Rolo Fita Phoenix Azul",
+        category: "fitas-arquear",
+        image: "/images/produtos/1126.png",
+    },
+    {
+        id: "fita-phoenix-preta",
+        name: "Rolo Fita Phoenix Preta",
+        category: "fitas-arquear",
+        image: "/images/produtos/1125.png",
+    },
+    {
+        id: "fita-dba",
+        name: "Rolo Fita DBA",
+        category: "fitas-arquear",
+        image: "/images/produtos/1123.png",
+    },
+    {
+        id: "fitilho-reciclado",
+        name: "Fitilho Reciclado",
+        category: "fitas-arquear",
+        image: "/images/produtos/1128.png",
+    },
+    {
+        id: "fitilho-comum",
+        name: "Fitilho Comum",
+        category: "fitas-arquear",
+        image: "/images/produtos/1127.png",
+    },
+
+    // ── PLÁSTICO E PROTEÇÃO ────────────────────────────────────────
+    {
+        id: "plastico-bolha",
+        name: "Rolo Plástico Bolha",
+        category: "plastico-protecao",
+        image: "/images/produtos/1105.png",
+    },
+    {
+        id: "papelao-ondulado",
+        name: "Rolo Papelão Ondulado",
+        category: "plastico-protecao",
+        image: "/images/produtos/1131.png",
+    },
+
+    // ── BOBINAS E SACOS ────────────────────────────────────────────
+    {
+        id: "bobina-fundo-estrela",
+        name: "Bobina Fundo Estrela",
+        category: "bobinas-sacos",
+        image: "/images/produtos/1145.png",
+    },
+    {
+        id: "bobina-rb-solda-funda-25x35",
+        name: "Bobina RB Solda Funda 25x35",
+        category: "bobinas-sacos",
+        image: "/images/produtos/1109.png",
+    },
+    {
+        id: "bobina-rb-solda-funda-30x40",
+        name: "Bobina RB Solda Funda 30x40",
+        category: "bobinas-sacos",
+        image: "/images/produtos/1110.png",
+    },
+    {
+        id: "bobina-rb-solda-funda-40x60",
+        name: "Bobina RB Solda Funda 40x60",
+        category: "bobinas-sacos",
+        image: "/images/produtos/1112.png",
+    },
+    {
+        id: "saco-bd-virgem",
+        name: "Saco BD Virgem",
+        category: "bobinas-sacos",
+        image: "/images/produtos/1113.png",
+    },
+
+    // ── SACOLAS ────────────────────────────────────────────────────
+    // (adicione aqui sacolas plásticas quando houver)
+
+    // ── ACESSÓRIOS ─────────────────────────────────────────────────
+    {
+        id: "aplicador-manual-stretch",
+        name: "Aplicador Manual de Filme Stretch",
+        category: "acessorios",
+        image: "/images/produtos/1115.png",
+    },
+    {
+        id: "cantoneira-plastica-arquear",
+        name: "Caixa Cantoneira Plástica Para Fita de Arquear",
+        category: "acessorios",
+        image: "/images/produtos/1120.png",
+    },
 ];
 
 export const FEATURES_HOME = [

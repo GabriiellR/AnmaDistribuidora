@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, ShoppingBag } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
 const footerLinks = [
@@ -94,6 +94,19 @@ export function Footer() {
             <Instagram className="h-6 w-6" />
           </a>
           <span className="text-sm text-white/60">@anma.distribuidora</span>
+
+
+          <a
+            href="https://shopee.com.br/anmadistribuidora"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white"
+            aria-label="Instagram Anma Distribuidora"
+          >
+            <ShoppingBag className="h-6 w-6" />
+          </a>
+          <span className="text-sm text-white/60">Shopee</span>
+
         </div>
 
         <p className="mt-8 text-center text-sm text-white/60 sm:text-left">

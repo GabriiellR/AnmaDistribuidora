@@ -5,7 +5,7 @@
  */
 export const COMPANY = {
   name: "Anma Distribuidora",
-  foundedYear: 2022,
+  foundedYear: 2023,
   tagline: "Embalagens inovadoras e sustentáveis",
   phone: "(31) 3965-3006",
   phoneTel: "+553139653006",
@@ -20,6 +20,7 @@ export const COMPANY = {
   coverage: "Atendimento em todo o Brasil",
   social: {
     instagram: "https://www.instagram.com/anma.distribuidora/",
+    Shoppe: "https://www.instagram.com/anma.distribuidora/",
   },
   description:
     "Distribuidora de embalagens com foco em filme stretch, proteção de carga e insumos para sua operação — do comércio à indústria.",

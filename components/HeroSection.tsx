@@ -26,7 +26,7 @@ export function HeroSection() {
             {COMPANY.tagline}
           </p>
           <p className="mt-5 max-w-xl text-base text-white/90 md:text-lg">
-            Filme stretch, proteção de carga, fitas e insumos para paletização —
+            Filme stretch, proteção de carga, fitas e insumos para paletização
             com estoque, agilidade e atendimento direto pelo WhatsApp.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

@@ -20,7 +20,7 @@ export function Header() {
   const [logoOk, setLogoOk] = useState(true);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-white shadow-md opacity-90">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-2 leading-tight">
           <span className="sr-only">{COMPANY.name}</span>
@@ -30,7 +30,7 @@ export function Header() {
               alt={COMPANY.name}
               width={280}
               height={96}
-              className="h-20 w-auto max-w-[280px] object-contain object-left md:h-28"
+              className="h-20 w-auto max-w-[280px] object-contain object-left md:h-36"
               onError={() => setLogoOk(false)}
             />
           ) : (
@@ -45,12 +45,12 @@ export function Header() {
           )}
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Principal">
+        <nav className="hidden items-center  size gap-6 lg:flex" aria-label="Principal">
           {navLinks.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-text transition-all duration-200 hover:text-primary hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
+              className="text-md font-medium text-text transition-all duration-200 hover:text-primary hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
             >
               {item.label}
             </Link>

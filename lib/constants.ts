@@ -123,176 +123,75 @@ export interface ProductItem {
  * (slug = nome do arquivo sem extensão).
  */
 export const PRODUCTS: ProductItem[] = [
-    // ── FILME STRETCH ──────────────────────────────────────────────
-    {
-        id: "filme-pvc-380x9x700",
-        name: "Bob Filme de PVC 380x9x700",
-        category: "filme-stretch",
-        image: "/images/produtos/1173.png",
-    },
-    {
-        id: "bobina-stretch-com-tubete-1107",
-        name: "Bobina Filme Stretch Com Tubete",
-        category: "filme-stretch",
-        image: "/images/produtos/1107.png",
-    },
-    {
-        id: "filme-stretch-com-tubete",
-        name: "Filme Stretch Com Tubete",
-        category: "filme-stretch",
-        image: "/images/produtos/1099.png",
-    },
-    {
-        id: "filme-stretch-sem-tubete",
-        name: "Filme Stretch Sem Tubete",
-        category: "filme-stretch",
-        image: "/images/produtos/1091_1102_1100.png",
-    },
-    {
-        id: "stretchinho-manopla",
-        name: "Rolo Stretchinho Com Manopla 100 Metros",
-        category: "filme-stretch",
-        image: "/images/produtos/1009.png",
-    },
+    // ── FILME STRETCH ─────────────────────────────
+    { id: "filme-stretch-ecologico", name: "Filme Stretch com Tubo Ecológico 500mm 0,025 Micras", category: "filme-stretch", image: `/images/produtos/${1186}.png` },
+    { id: "filme-stretch-25kg", name: "Filme Stretch com Tubete 2,5kg 500mm 0,025 Micras", category: "filme-stretch", image: `/images/produtos/${1165}.png` },
+    { id: "filme-stretch-3kg", name: "Filme Stretch Convencional com Tubete 3kg", category: "filme-stretch", image: `/images/produtos/${1099}.png` },
+    { id: "filme-stretch-preto-reforcado", name: "Filme Stretch Preto Reforçado 25 Micras", category: "filme-stretch", image: `/images/produtos/${1886}.png` },
+    { id: "filme-stretch-automatico", name: "Filme Stretch High Automático 500mm", category: "filme-stretch", image: `/images/produtos/${1167}.png` },
+    { id: "filme-stretch-030", name: "Filme Stretch Convencional 0,30 Micras", category: "filme-stretch", image: `/images/produtos/${1165}.png` },
+    { id: "filme-stretch-16kg", name: "Filme Stretch com Tubete 16kg", category: "filme-stretch" },
+    { id: "filme-stretch-sem-tubete", name: "Filme Stretch Sem Tubete", category: "filme-stretch", image: `/images/produtos/${1091_1102_1100}.png` },
+    { id: "filme-stretch-pre-estirado", name: "Filme Stretch Pré Estirado Manual", category: "filme-stretch" },
+    { id: "stretchinho-manopla", name: "Stretchinho com Manopla 100m", category: "filme-stretch" },
 
-    // ── FITAS ADESIVAS ─────────────────────────────────────────────
-    {
-        id: "fita-crepe",
-        name: "Pct Fita Crepe",
-        category: "fitas-adesivas",
-        image: "/images/produtos/1179_1180.png",
-    },
-    {
-        id: "fita-adesiva-transparente",
-        name: "Und Fita Adesiva Transp.",
-        category: "fitas-adesivas",
-        image: "/images/produtos/1155.png",
-    },
-    {
-        id: "fita-adesiva-cristal",
-        name: "Pct Fita Adesiva Cristal",
-        category: "fitas-adesivas",
-        image: "/images/produtos/1133.png",
-    },
-    {
-        id: "fita-gomada-sem-reforco",
-        name: "Fita Gomada Sem Reforço Nylon",
-        category: "fitas-adesivas",
-        image: "/images/produtos/1121.png",
-    },
-    {
-        id: "fita-gomada-com-reforco",
-        name: "Fita Gomada Com Reforço Nylon",
-        category: "fitas-adesivas",
-        image: "/images/produtos/1122.png",
-    },
+    // ── FITAS ADESIVAS ───────────────────────────
+    { id: "fita-adesiva-48x100", name: "Fita Adesiva 48mm x 100m", category: "fitas-adesivas", image: `/images/produtos/${1164}.png` },
+    { id: "fita-adesiva-hotmelt", name: "Fita Adesiva Hot Melt", category: "fitas-adesivas", image: `/images/produtos/${1515}.png` },
+    { id: "fita-adesiva-transparente", name: "Fita Adesiva Transparente", category: "fitas-adesivas", image: `/images/produtos/${1163}.png` },
+    { id: "fita-adesiva-cristal", name: "Fita Adesiva Cristal", category: "fitas-adesivas", image: `/images/produtos/${1163}.png` },
+    { id: "fita-kraft", name: "Fita Adesiva Kraft", category: "fitas-adesivas", image: `/images/produtos/${1154}.png` },
+    { id: "fita-koretape", name: "Fita Koretape Marrom", category: "fitas-adesivas", image: `/images/produtos/${1140}.png` },
+    { id: "fita-dupla-face-18mm", name: "Fita Dupla Face 18mm x 30m", category: "fitas-adesivas", image: `/images/produtos/${1136}.png` },
+    { id: "fita-dupla-face-12mm", name: "Fita Dupla Face 12mm x 30m", category: "fitas-adesivas", image: `/images/produtos/${1136}.png` },
+    { id: "fita-crepe-48mm", name: "Fita Crepe Uso Geral 48mm x 45m", category: "fitas-adesivas", image: `/images/produtos/${1166}.png` },
+    { id: "fita-crepe-24mm", name: "Fita Crepe 24mm", category: "fitas-adesivas", image: `/images/produtos/${117912}.png` },
+    { id: "fita-crepe-18mm", name: "Fita Crepe 18mm", category: "fitas-adesivas", image: `/images/produtos/${1181}.png` },
+    { id: "fita-gomada", name: "Fita Gomada", category: "fitas-adesivas", image: `/images/produtos/${1121}.png` },
 
-    // ── FITAS DE ARQUEAR ───────────────────────────────────────────
-    {
-        id: "fita-pet-16mm-1163",
-        name: "Rolo Fita PET 16MM",
-        category: "fitas-arquear",
-        image: "/images/produtos/1163.png",
-    },
-    {
-        id: "fita-pet-16mm-1116",
-        name: "Rolo Fita PET 16MM (alt.)",
-        category: "fitas-arquear",
-        image: "/images/produtos/1116.png",
-    },
-    {
-        id: "fita-phoenix-azul",
-        name: "Rolo Fita Phoenix Azul",
-        category: "fitas-arquear",
-        image: "/images/produtos/1126.png",
-    },
-    {
-        id: "fita-phoenix-preta",
-        name: "Rolo Fita Phoenix Preta",
-        category: "fitas-arquear",
-        image: "/images/produtos/1125.png",
-    },
-    {
-        id: "fita-dba",
-        name: "Rolo Fita DBA",
-        category: "fitas-arquear",
-        image: "/images/produtos/1123.png",
-    },
-    {
-        id: "fitilho-reciclado",
-        name: "Fitilho Reciclado",
-        category: "fitas-arquear",
-        image: "/images/produtos/1128.png",
-    },
-    {
-        id: "fitilho-comum",
-        name: "Fitilho Comum",
-        category: "fitas-arquear",
-        image: "/images/produtos/1127.png",
-    },
+    // ── FITAS DE ARQUEAR ─────────────────────────
+    { id: "fita-pet-19mm", name: "Fita PET 19mm", category: "fitas-arquear", image: `/images/produtos/${1141}.png` },
+    { id: "fita-pet-16mm", name: "Fita PET 16mm", category: "fitas-arquear", image: `/images/produtos/${1141}.png` },
+    { id: "fita-pet-13mm", name: "Fita PET 13mm", category: "fitas-arquear", image: `/images/produtos/${1141}.png` },
+    { id: "fita-phoenix-azul", name: "Fita Phoenix Azul", category: "fitas-arquear" },
+    { id: "fita-phoenix-preta", name: "Fita Phoenix Preta", category: "fitas-arquear" },
+    { id: "fita-phoenix-branca", name: "Fita Phoenix Branca", category: "fitas-arquear" },
+    { id: "fita-dba", name: "Fita DBA", category: "fitas-arquear" },
+    { id: "fitilho-reciclado", name: "Fitilho Reciclado", category: "fitas-arquear" },
+    { id: "fitilho-comum", name: "Fitilho Comum", category: "fitas-arquear" },
 
-    // ── PLÁSTICO E PROTEÇÃO ────────────────────────────────────────
-    {
-        id: "plastico-bolha",
-        name: "Rolo Plástico Bolha",
-        category: "plastico-protecao",
-        image: "/images/produtos/1105.png",
-    },
-    {
-        id: "papelao-ondulado",
-        name: "Rolo Papelão Ondulado",
-        category: "plastico-protecao",
-        image: "/images/produtos/1131.png",
-    },
+    // ── PLÁSTICO E PROTEÇÃO ──────────────────────
+    { id: "plastico-bolha", name: "Plástico Bolha Rolo", category: "plastico-protecao" },
+    { id: "papelao-ondulado", name: "Papelão Ondulado", category: "plastico-protecao" },
+    { id: "lona-preta", name: "Lona Preta", category: "plastico-protecao", image: `/images/produtos/${1187}.png` },
+    { id: "filme-pvc", name: "Filme PVC", category: "plastico-protecao", image: `/images/produtos/${1173}.png` },
 
-    // ── BOBINAS E SACOS ────────────────────────────────────────────
-    {
-        id: "bobina-fundo-estrela",
-        name: "Bobina Fundo Estrela",
-        category: "bobinas-sacos",
-        image: "/images/produtos/1145.png",
-    },
-    {
-        id: "bobina-rb-solda-funda-25x35",
-        name: "Bobina RB Solda Funda 25x35",
-        category: "bobinas-sacos",
-        image: "/images/produtos/1109.png",
-    },
-    {
-        id: "bobina-rb-solda-funda-30x40",
-        name: "Bobina RB Solda Funda 30x40",
-        category: "bobinas-sacos",
-        image: "/images/produtos/1110.png",
-    },
-    {
-        id: "bobina-rb-solda-funda-40x60",
-        name: "Bobina RB Solda Funda 40x60",
-        category: "bobinas-sacos",
-        image: "/images/produtos/1112.png",
-    },
-    {
-        id: "saco-bd-virgem",
-        name: "Saco BD Virgem",
-        category: "bobinas-sacos",
-        image: "/images/produtos/1113.png",
-    },
+    // ── BOBINAS E SACOS ──────────────────────────
+    { id: "bobina-fundo-estrela", name: "Bobina Fundo Estrela", category: "bobinas-sacos", image: `/images/produtos/${1145}.png` },
+    { id: "bobina-papel-ondulado", name: "Bobina Papel Ondulado 1,20 CM", category: "bobinas-sacos", image: `/images/produtos/${1131}.png`},
+    { id: "bobina-rb-20x35", name: "Bobina RB Solda Funda 20x35", category: "bobinas-sacos", image: `/images/produtos/${1108}.png` },
+    { id: "bobina-rb-25x35", name: "Bobina RB Solda Funda 25x35", category: "bobinas-sacos", image: `/images/produtos/${1109}.png` },
+    { id: "bobina-rb-30x40", name: "Bobina RB Solda Funda 30x40", category: "bobinas-sacos", image: `/images/produtos/${1110}.png` },
+    { id: "bobina-rb-35x50", name: "Bobina RB Solda Funda 35x50", category: "bobinas-sacos", image: `/images/produtos/${1111}.png` },
+    { id: "bobina-rb-40x60", name: "Bobina RB Solda Funda 40x60", category: "bobinas-sacos", image: `/images/produtos/${1112}.png` },
+    { id: "saco-bd-virgem", name: "Saco BD Virgem", category: "bobinas-sacos", image: `/images/produtos/${1113}.png` },
+    { id: "saco-lixo-30l", name: "Saco de Lixo 30L", category: "bobinas-sacos", image: `/images/produtos/${1152}.png` },
+    { id: "saco-lixo-50l", name: "Saco de Lixo 50L", category: "bobinas-sacos", image: `/images/produtos/${1152}.png` },
+    { id: "saco-lixo-100l", name: "Saco de Lixo 100L", category: "bobinas-sacos", image: `/images/produtos/${1152}.png` },
+    { id: "saco-lixo-200l", name: "Saco de Lixo 200L", category: "bobinas-sacos", image: `/images/produtos/${1152}.png` },
 
-    // ── SACOLAS ────────────────────────────────────────────────────
-    // (adicione aqui sacolas plásticas quando houver)
+    // ── SACOLAS ──────────────────────────────────
+    { id: "sacola-branca", name: "Sacola Plástica Branca", category: "sacolas", image: `/images/produtos/${1160}.png` },
+    { id: "sacola-verde", name: "Sacola Plástica Verde", category: "sacolas", image: `/images/produtos/${11111}.png` },
 
-    // ── ACESSÓRIOS ─────────────────────────────────────────────────
-    {
-        id: "aplicador-manual-stretch",
-        name: "Aplicador Manual de Filme Stretch",
-        category: "acessorios",
-        image: "/images/produtos/1115.png",
-    },
-    {
-        id: "cantoneira-plastica-arquear",
-        name: "Caixa Cantoneira Plástica Para Fita de Arquear",
-        category: "acessorios",
-        image: "/images/produtos/1120.png",
-    },
+    // ── ACESSÓRIOS ───────────────────────────────
+    { id: "aplicador-fita", name: "Aplicador de Fita Adesiva", category: "acessorios", image: `/images/produtos/${1171}.png` },
+    { id: "aplicador-stretch", name: "Aplicador Manual de Filme Stretch", category: "acessorios", image: `/images/produtos/${1009.1}.png` },
+    { id: "esticador-pet", name: "Esticador de Fita PET", category: "acessorios", image: `/images/produtos/${1148}.png` },
+    { id: "selador-pet", name: "Selador PET", category: "acessorios", image: `/images/produtos/${1149}.png` },
+    { id: "cantoneira", name: "Cantoneira Plástica para Arquear", category: "acessorios" },
+    { id: "selo-metal", name: "Selo de Metal para Fita PET", category: "acessorios", image: `/images/produtos/${1120}.png` },
+    { id: "carrinho-desbobinador", name: "Carrinho Desbobinador", category: "acessorios", image: `/images/produtos/${1161}.png` },
 ];
 
 export const FEATURES_HOME = [

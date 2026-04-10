@@ -10,7 +10,7 @@ export function FAQAccordion() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="mx-auto max-w-3xl space-y-3">
+    <div className="mx-auto max-w-3xl space-y-3" id="perguntas-frequentes">
       {FAQ_ITEMS.map((item, i) => {
         const isOpen = open === i;
         return (

@@ -12,7 +12,8 @@ const navLinks = [
   { href: "/", label: "Início" },
   { href: "/sobre", label: "Quem Somos" },
   { href: "/produtos", label: "Produtos" },
-  { href: "/contato", label: "Contato" },
+  { href: "/contato", label: "Fale Conosco" },
+  { href: "/produtos/#perguntas-frequentes", label: "Perguntas Frequentes" },
 ];
 
 export function Header() {

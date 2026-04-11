@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/produtos", label: "Produtos" },
   { href: "/contato", label: "Contato" },
   { href: "/produtos/#perguntas-frequentes", label: "Perguntas Frequentes" },
-  { href: "#", label: "Sustentabilidade" },
+  { href: "/sustentabilidade", label: "Sustentabilidade" },
 ];
 
 export function Header() {

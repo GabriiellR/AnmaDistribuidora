@@ -101,7 +101,7 @@ export const PRODUCT_CATEGORIES: {
     label: string;
 }[] = [
         { id: "filme-stretch", label: "Filme stretch" },
-        { id: "fitas-adesivas", label: "Fitas adesivas" },
+        { id: "fitas-adesivas", label: "Fitas" },
         { id: "fitas-arquear", label: "Fitas de arquear" },
         { id: "plastico-protecao", label: "Plástico e proteção" },
         { id: "bobinas-sacos", label: "Bobinas e sacos" },   // ← NOVA
@@ -222,7 +222,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Os produtos são entregues em todo o Brasil?",
-    a: "Sim. Organizamos envio para todo o território nacional com transportadoras parceiras. Prazo e frete são informados no orçamento.",
+    a: "Sim. Organizamos envio para todo o território nacional. Prazo e frete são informados no orçamento.",
   },
   {
     q: "Trabalham com a linha Koretech?",
@@ -231,5 +231,9 @@ export const FAQ_ITEMS = [
   {
     q: "Como solicito orçamento?",
     a: "Use o botão de WhatsApp no site, o formulário de contato ou clique em “Saiba mais” no produto desejado — a mensagem já vem pré-preenchida.",
+  },
+  {
+    q: "Posso comprar presencialmente?",
+    a: "Não, as vendas são realizadas exclusivamente pelos canais digitais.",
   },
 ];

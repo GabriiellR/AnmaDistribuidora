@@ -12,8 +12,9 @@ const navLinks = [
   { href: "/", label: "Início" },
   { href: "/sobre", label: "Quem Somos" },
   { href: "/produtos", label: "Produtos" },
-  { href: "/contato", label: "Fale Conosco" },
+  { href: "/contato", label: "Contato" },
   { href: "/produtos/#perguntas-frequentes", label: "Perguntas Frequentes" },
+  { href: "#", label: "Sustentabilidade" },
 ];
 
 export function Header() {
@@ -22,8 +23,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md opacity-90">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6 lg:px-8">
-        <Link href="/" className="flex shrink-0 items-center gap-2 leading-tight">
+      <div className="mx-auto flex  items-center justify-around gap-4 px-4 py-3 md:px-6 lg:px-8">
+        <Link href="/" className="flex shrink-0 items-center gap-8 leading-tight">
           <span className="sr-only">{COMPANY.name}</span>
           {logoOk ? (
             <Image
@@ -36,7 +37,7 @@ export function Header() {
             />
           ) : (
             <span className="flex flex-col leading-tight">
-              <span className="text-xl font-extrabold tracking-tight text-primary md:text-2xl">
+              <span className="text-2xl font-extrabold tracking-tight text-primary md:text-2xl">
                 ANMA
               </span>
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary/80 md:text-xs">
@@ -51,7 +52,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-md font-medium text-text transition-all duration-200 hover:text-primary hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
+              className="text-lg font-medium text-text transition-all duration-200 hover:text-primary hover:underline hover:decoration-accent hover:decoration-2 hover:underline-offset-4"
             >
               {item.label}
             </Link>
@@ -70,7 +71,7 @@ export function Header() {
 
           <button
             type="button"
-            className="rounded-lg p-2 text-primary lg:hidden"
+            className="rounded-lg p-2 text-primary  lg:hidden"
             onClick={() => setOpen(true)}
             aria-expanded={open}
             aria-controls="mobile-menu"

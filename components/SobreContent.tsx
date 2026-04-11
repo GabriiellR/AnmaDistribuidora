@@ -7,6 +7,7 @@ import { NossaEstruturaMedia } from "@/components/NossaEstruturaMedia";
 import { SitePhoto } from "@/components/SitePhoto";
 import { COMPANY } from "@/lib/constants";
 import { SITE_IMAGES } from "@/lib/site-images";
+import Image from "next/image";
 
 const mvv = [
   {
@@ -43,20 +44,21 @@ export function SobreContent() {
       <section className="bg-white py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
-            <motion.div
-              initial={{ opacity: 0, x: -12 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="max-h-[400px] lg:max-h-[480px]"
-            >
-              <SitePhoto
-                src={SITE_IMAGES.sobrePrincipal}
-                alt={`${COMPANY.name} — quem somos`}
-                className="aspect-square max-h-[400px] rounded-2xl bg-gray-200 lg:max-h-[480px]"
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                fallback={<div className="h-full min-h-[280px] bg-gray-200" />}
-              />
-            </motion.div>
+       <motion.div
+  initial={{ opacity: 0, x: -12 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  className="relative w-full h-[400px] lg:h-[600px]"
+>
+  <Image
+    src={SITE_IMAGES.sobrePrincipal}
+    alt={`${COMPANY.name} — quem somos`}
+    fill
+    sizes="(max-width: 1024px) 100vw, 45vw"
+    className="object-contain rounded-2xl "
+  />
+</motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: 12 }}
               whileInView={{ opacity: 1, x: 0 }}

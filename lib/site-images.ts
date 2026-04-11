@@ -5,7 +5,7 @@ export const SITE_IMAGES = {
   /** Seção “Sobre” na página inicial */
   sobreHome: "/images/sobre-home.jpg",
   /** Primeira foto na página /sobre */
-  sobrePrincipal: "/images/sobre-principal.jpg",
+  sobrePrincipal: "/images/sobre-principal2.png",
   /** Foto “Nossa estrutura” na página /sobre */
   sobreEstrutura: "/images/sobre-estrutura.jpg",
   /** Logo no header (opcional). Se não existir, o texto ANMA continua aparecendo */

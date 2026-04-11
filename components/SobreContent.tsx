@@ -34,7 +34,7 @@ const parceiroBenefits = [
   "Estoque para atender pedidos com agilidade",
   "Linha voltada a filme stretch e proteção de carga",
   "Atendimento B2B e B2C",
-  "Entrega em todo o Brasil via transportadoras",
+  "Entrega em todo o Brasil",
 ];
 
 export function SobreContent() {
@@ -69,19 +69,24 @@ export function SobreContent() {
                 {COMPANY.name}
               </h1>
               <p className="mt-4 font-bold text-text">{COMPANY.tagline}</p>
-              <p className="mt-4 text-text-muted">
-                Desde {COMPANY.foundedYear}, a {COMPANY.name} reúne distribuição de
-                embalagens, estoque e logística para quem precisa de filme stretch,
-                plástico bolha, fitas e itens para paletização. Estamos em
-                Contagem (MG), com foco em atender tanto indústrias e revendas
-                quanto o comércio local.
+              <p className="mt-4 text-text-muted text-left">
+                A Anma nasce da visão empreendedora de dois profissionais do 
+setor financeiro, mineiros, que identificaram a oportunidade de 
+transformar o mercado de embalagens por meio de inovação, 
+eficiência e responsabilidade ambiental.
+Nosso propósito é oferecer soluções em embalagens 
+inovadoras e sustentáveis, que atendam às necessidades dos 
+clientes com qualidade, segurança e inteligência operacional. 
+Atuamos com foco na excelência dos produtos e serviços, 
+comprometidos com a redução dos impactos ambientais e 
+com a adoção de práticas comerciais éticas e transparentes.
               </p>
-              <p className="mt-4 text-text-muted">
+              {/* <p className="mt-4 text-text-muted">
                 Acreditamos em {COMPANY.tagline.toLowerCase()}: buscamos
                 eficiência no uso de materiais, parcerias de confiança e
                 atendimento direto — principalmente pelo WhatsApp — para tornar
                 seu pedido simples e rápido.
-              </p>
+              </p> */}
               <div className="mt-8">
                 <CTAButton href={COMPANY.whatsappUrl} external variant="primary">
                   Chamar no WhatsApp
@@ -129,11 +134,13 @@ export function SobreContent() {
                 Nossa estrutura
               </h2>
               <p className="mt-4 text-text-muted">
-                Operamos com galpão em Contagem, organização de estoque e apoio
-                de transportadoras para despacho em todo o Brasil. Atendemos
-                volumes industriais e pedidos menores, conforme disponibilidade
-                do produto — sempre com transparência no orçamento e no prazo.
+                Nossa empresa está localizada na cidade de Contagem em Minas Gerais.
+                Contamos com amplo portifólio de produtos para atender a todo tipo de negócio,
+                desde transportadoras, armazéns logísticos, supermercados, hortifrútis e indústrias
+                em geral. 
               </p>
+              <p className="mt-4 text-text-muted">Entrega própria em todo Brasil. Atendemos todos os tipos de volumes,
+                conforme disponibilidade do produto — sempre com transparência no pedido e prazo.</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 12 }}
@@ -167,9 +174,8 @@ export function SobreContent() {
               ))}
             </ul>
             <p className="mt-8 text-text-muted">
-              Trabalhamos com filme stretch, plástico bolha, fitas para
-              arqueação e acessórios — ideal para quem precisa proteger produtos
-              e unitizar paletes com segurança.
+              Trabalhamos com filme stretch, embalagens industriais em geral, fitas de arquear e acessórios, 
+              ideais para quem precisa proteger produtos e unitizar paletes com segurança.
             </p>
           </motion.div>
         </div>

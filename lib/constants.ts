@@ -9,14 +9,14 @@ export const COMPANY = {
   tagline: "Embalagens inovadoras e sustentáveis",
   phone: "(31) 3965-3006",
   phoneTel: "+553139653006",
-  whatsappDisplay: "(31) 9678-1146",
+  whatsappDisplay: "(31) 99678-1146",
   whatsappTel: "+553196781146",
   whatsappUrl: "https://wa.me/553196781146",
   whatsappHeroUrl: "https://wa.me/553196781146",
   email: "contato@anmadistribuidora.com.br",
   address: "Rua CC 342, Galpão 3 – Arvoredo, Contagem – MG, 32113-215",
   addressShort: "Rua CC 342, Galpão 3 – Arvoredo, Contagem – MG",
-  hours: "Das 08h às 18h",
+  hours: "De segunda a Quinta 07:00 às 17:00, Sextas 07:00 às 16:00",
   coverage: "Atendimento em todo o Brasil",
   social: {
     instagram: "https://www.instagram.com/anma.distribuidora/",
@@ -135,7 +135,7 @@ export const PRODUCTS: ProductItem[] = [
     { id: "filme-stretch-pre-estirado", name: "Filme Stretch Pré Estirado Manual", category: "filme-stretch" },
     { id: "stretchinho-manopla", name: "Stretchinho com Manopla 100m", category: "filme-stretch" },
 
-    // ── FITAS ADESIVAS ───────────────────────────
+    // ── FITAS GERAL ───────────────────────────
     { id: "fita-adesiva-48x100", name: "Fita Adesiva 48mm x 100m", category: "fitas-adesivas", image: `/images/produtos/${1164}.png` },
     { id: "fita-adesiva-hotmelt", name: "Fita Adesiva Hot Melt", category: "fitas-adesivas", image: `/images/produtos/${1515}.png` },
     { id: "fita-adesiva-transparente", name: "Fita Adesiva Transparente", category: "fitas-adesivas", image: `/images/produtos/${1163}.png` },

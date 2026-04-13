@@ -12,6 +12,7 @@ const badgeColors: Record<ProductCategoryId, string> = {
   "fitas-adesivas": "bg-amber-100 text-amber-950",
   "fitas-arquear": "bg-lime-100 text-lime-950",
   "plastico-protecao": "bg-sky-100 text-sky-900",
+  "etiquetas": "bg-sky-100 text-sky-900", 
   sacolas: "bg-green-100 text-green-900",
   acessorios: "bg-slate-200 text-slate-800",
   "bobinas-sacos": "bg-purple-100 text-purple-950",

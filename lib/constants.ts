@@ -271,10 +271,6 @@ export const FAQ_ITEMS = [
     a: "Sim. Organizamos envio para todo o território nacional. Prazo e frete são informados no orçamento.",
   },
   {
-    q: "Trabalham com a linha Koretech?",
-    a: "Sim. Temos fitas adesivas Koretech em diversas medidas. Consulte disponibilidade e quantidade mínima pelo WhatsApp.",
-  },
-  {
     q: "Como solicito orçamento?",
     a: "Use o botão de WhatsApp no site, o formulário de contato ou clique em “Saiba mais” no produto desejado — a mensagem já vem pré-preenchida.",
   },

@@ -106,8 +106,8 @@ export const PRODUCT_CATEGORIES: {
         { id: "fitas-arquear", label: "Fitas de arquear" },
         { id: "plastico-protecao", label: "Plástico e proteção" },
         { id: "bobinas-sacos", label: "Bobinas e sacos" },  
-        { id: "etiquetas", label: "Etiqueta" },  
         { id: "sacolas", label: "Sacolas" },
+        { id: "etiquetas", label: "Etiqueta" },  
         { id: "acessorios", label: "Acessórios" },
     ];
 

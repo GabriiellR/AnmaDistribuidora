@@ -173,7 +173,7 @@ export function HeroSection() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-6 text-base md:text-lg text-white/60 leading-relaxed max-w-md"
             >
-              Filme stretch, fitas e insumos para paletização — com estoque,
+              Filme stretch, fitas e insumos para paletização garantindo
               agilidade e atendimento direto.{" "}
               <span className="text-white/90 font-semibold">
                 Do comércio à indústria, em todo o Brasil.

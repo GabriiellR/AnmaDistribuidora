@@ -3,7 +3,7 @@ export const SITE_IMAGES = {
   /** Hero (ex.: frota, produtos) — recomendado ~1200×1200px ou proporção quadrada */
   hero: "/images/hero.png",
   /** Seção “Sobre” na página inicial */
-  sobreHome: "/images/sobre-home.jpg",
+  sobreHome: "/images/sobre-home2.jpg",
   /** Primeira foto na página /sobre */
   sobrePrincipal: "/images/sobre-principal2.png",
   /** Foto “Nossa estrutura” na página /sobre */

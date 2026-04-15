@@ -113,7 +113,6 @@ export default function SustentabilidadePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tight mb-6"
-            style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
           >
             {/* <div className="flex"> */}
             Sustenta
@@ -274,7 +273,6 @@ export default function SustentabilidadePage() {
             </span>
             <h2
               className="text-4xl md:text-5xl font-black text-gray-900"
-              style={{ fontFamily: "'Georgia', serif" }}
             >
               Resultados que fazem{" "}
               <span className="text-emerald-600">a diferença</span>

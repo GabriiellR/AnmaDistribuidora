@@ -20,7 +20,7 @@ const navLinks = [
     label: "Mais",
     href: "#",
     children: [
-      { href: "/#perguntas-frequentes", label: "Perguntas Frequentes" },
+      { href: "/sobre/#perguntas-frequentes", label: "Perguntas Frequentes" },
     ],
   },
 ];

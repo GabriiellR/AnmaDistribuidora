@@ -57,7 +57,7 @@ export function AboutSection() {
             </p>
             <p className="mt-4 text-text-muted text-justify">
               Nosso compromisso é unir qualidade, prazo e transparência no
-              orçamento — com atendimento direto pelo WhatsApp e entrega
+              orçamento com atendimento direto pelo WhatsApp e entrega
               organizada com transportadoras parceiras.
             </p>
             <CTAButton href="/sobre" variant="secondary" className="mt-8">

@@ -232,7 +232,7 @@ export default function SustentabilidadePage() {
                 Recompra de{" "}
                 <span className="text-emerald-600">tubos de papelão</span>
               </h2>
-              <div className="space-y-5 text-gray-600 leading-relaxed">
+              <div className="space-y-5 text-gray-600 leading-relaxed text-justify">
                 <p>
                   Como parte do nosso compromisso com a responsabilidade ambiental e a
                   economia circular, implementamos uma <strong className="text-gray-800">política estruturada de recompra</strong> dos
@@ -240,8 +240,8 @@ export default function SustentabilidadePage() {
                   aos nossos clientes.
                 </p>
                 <p>
-                  Após o uso do filme, esses tubos — que tradicionalmente seriam
-                  descartados — passam a ter um novo destino: são <strong className="text-gray-800">recolhidos e
+                  Após o uso do filme, esses tubos que tradicionalmente seriam
+                  descartados passam a ter um novo destino: são <strong className="text-gray-800">recolhidos e
                   reinseridos em nosso processo industrial</strong>, promovendo sua
                   reutilização de forma eficiente e consciente.
                 </p>

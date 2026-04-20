@@ -89,7 +89,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white"
-            aria-label="Instagram Anma Distribuidora"
+            aria-label="Instagram ANMA Distribuidora"
           >
             <Instagram className="h-6 w-6" />
           </a>
@@ -101,7 +101,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white"
-            aria-label="Instagram Anma Distribuidora"
+            aria-label="Instagram ANMA Distribuidora"
           >
             <ShoppingBag className="h-6 w-6" />
           </a>

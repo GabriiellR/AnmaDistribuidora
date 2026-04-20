@@ -4,7 +4,7 @@
  * Fotos: public/images/produtos/*.png — regenere com: node scripts/sync-product-images.mjs
  */
 export const COMPANY = {
-  name: "Anma Distribuidora",
+  name: "ANMA Distribuidora",
   foundedYear: 2023,
   tagline: "Embalagens inovadoras e sustentáveis",
   phone: "(31) 3965-3006",
@@ -59,7 +59,7 @@ export const TESTIMONIALS = [
     author: "Rodrigo Soares",
     meta: "6 avaliações",
     date: "6 meses atrás",
-    text: "Parabéns a todos da Anma Distribuidora! Grandes produtos! Perfeito atendimento!",
+    text: "Parabéns a todos da ANMA Distribuidora! Grandes produtos! Perfeito atendimento!",
     likes: 3,
   },
   {

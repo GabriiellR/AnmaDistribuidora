@@ -7,6 +7,7 @@ import { WhyChooseSection } from "@/components/WhyChooseSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { ContactStrip } from "@/components/ContactStrip";
 import { COMPANY } from "@/lib/constants";
+import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Início",
@@ -22,6 +23,18 @@ export default function HomePage() {
       <ProductsSection />
       <WhyChooseSection />
       <TestimonialsCarousel />
+
+      <section className="border-t border-surface-border bg-surface-bg py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+          <h2 className="text-center text-2xl font-extrabold text-primary md:text-3xl">
+            Perguntas frequentes
+          </h2>
+          <div className="mt-10">
+            <FAQAccordion />
+          </div>
+        </div>
+      </section>
+
       <ContactStrip />
     </>
   );

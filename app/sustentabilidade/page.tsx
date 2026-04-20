@@ -112,9 +112,7 @@ export default function SustentabilidadePage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tight mb-6"
-            style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
-          >
+            className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tight mb-6">
             {/* <div className="flex"> */}
             Sustenta
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-green-300 to-teal-400">
@@ -230,9 +228,7 @@ export default function SustentabilidadePage() {
                 Nossa Iniciativa
               </span>
               <h2
-                className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6"
-                style={{ fontFamily: "'Georgia', serif" }}
-              >
+                className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
                 Recompra de{" "}
                 <span className="text-emerald-600">tubos de papelão</span>
               </h2>
@@ -274,9 +270,7 @@ export default function SustentabilidadePage() {
               Impactos Diretos
             </span>
             <h2
-              className="text-4xl md:text-5xl font-black text-gray-900"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
+              className="text-4xl md:text-5xl font-black text-gray-900">
               Resultados que fazem{" "}
               <span className="text-emerald-600">a diferença</span>
             </h2>
@@ -326,9 +320,7 @@ export default function SustentabilidadePage() {
           >
             <div className="text-emerald-500 text-8xl font-black leading-none mb-4 opacity-40">"</div>
             <blockquote
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-relaxed"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-relaxed">
               Seguimos comprometidos em desenvolver soluções que conciliem{" "}
               <span className="text-emerald-400">performance</span>,{" "}
               <span className="text-emerald-400">economia</span> e{" "}
@@ -404,9 +396,7 @@ export default function SustentabilidadePage() {
           >
             <Award className="h-16 w-16 text-white/80 mx-auto mb-6" strokeWidth={1} />
             <h2
-              className="text-4xl md:text-5xl font-black text-white mb-6"
-              style={{ fontFamily: "'Georgia', serif" }}
-            >
+              className="text-4xl md:text-5xl font-black text-white mb-6">
               Seja um parceiro sustentável
             </h2>
             <p className="text-white/85 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">

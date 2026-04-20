@@ -48,14 +48,14 @@ export function AboutSection() {
               {COMPANY.name}
             </h2>
             <p className="mt-4 font-bold text-text">{COMPANY.tagline}</p>
-            <p className="mt-4 text-text-muted">
+            <p className="mt-4 text-text-muted text-justify">
               A {COMPANY.name} atua na distribuição de embalagens e insumos para
               quem precisa proteger, unitizar e transportar cargas com segurança.
               Com estoque e estrutura em Contagem (MG), atendemos desde o comércio
               local até empresas em todo o Brasil, com foco em filme stretch,
               plástico bolha, fitas e itens complementares.
             </p>
-            <p className="mt-4 text-text-muted">
+            <p className="mt-4 text-text-muted text-justify">
               Nosso compromisso é unir qualidade, prazo e transparência no
               orçamento — com atendimento direto pelo WhatsApp e entrega
               organizada com transportadoras parceiras.
